@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column</title>
+         	<link rel="stylesheet" href="setup/bootstrap.min.css">
+
+    <style>
+        body::before{
+            content:'xs';
+            color: orangered;
+            position: fixed;
+            font-size: 30px;
+            top: 0;
+            left: 0;
+        }
+        @media (min-width: 576px)
+        {
+            body::before{
+            content:'sm';
+            }
+        }
+        @media (min-width: 768px)
+        {
+            body::before{
+            content:'md';
+            }
+        }
+        @media (min-width: 992px)
+        {
+            body::before{
+            content:'lg';
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            body::before{
+            content:'xl';
+            }
+        } 
+        @media (min-width: 1400px)
+        {
+            body::before{
+            content:'xxl';
+            }
+        }
+        .sam{
+        background-color: aqua;   
+        border: 1px solid green;
+        min-height: 5px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        }
+        .row{
+            border: 1px solid brown;
+            padding: 5px;
+        }
+        .container{
+            border:1px solid black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+    <div class="container">
+        <div class="row my-3">
+            <div class="col">
+                <div class="sam">12</div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col"><div class="sam">6</div></div>
+            <div class="col"><div class="sam">6</div></div>
+        </div>
+        <div class="row my-3">
+            <div class="col"><div class="sam">4</div></div>
+            <div class="col"><div class="sam">4</div></div>
+            <div class="col"><div class="sam">4</div></div>
+        </div>
+        <div class="row my-3">
+            <div class="col-6"><div class="sam">6</div></div>
+            <div class="col"><div class="sam">1.5</div></div>
+            <div class="col-4"><div class="sam">4</div></div>
+            <div class="col"><div class="sam">1.5</div></div>
+        </div>
+        <div class="row my-3">
+            <div class="col-auto"><div class="sam">Agree carrer</div></div>
+            <div class="col"><div class="sam">balance </div></div>
+        </div> 
+        <div class="row my-3"> 
+            <div class="col col-xxl-6"><div class="sam">oringinal-12 xxl-6</div></div>
+        </div>
+        <div class="row my-3"> 
+            <div class="col offset-xxl-4"><div class="sam">oringinal-12 xxl-6</div></div>
+        </div>
+
+    </div>
+    <script src="setup/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

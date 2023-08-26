@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert</title>
+    <link rel="stylesheet" href="setup/bootstrap.min.css">
+    <style>
+        body{
+            background-color: aliceblue;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>simple alert</h2>
+        <div class="alert alert-warning">alert-warning</div>
+        <div class="alert alert-success">alert-success</div>
+        <div class="alert alert-primary">alert-primary</div>
+        <div class="alert alert-danger">alert-danger</div>
+        <div id="top"></div>
+        <div class="alert alert-secondary">alert-secondary</div>
+        <div class="alert alert-info">alert-info</div>
+        <div class="alert alert-light">alert-light</div>
+        <h2>anchor tag in alert</h2>
+        <div class="alert alert-primary">
+            alert with anchor tag
+            <a href="#" class="alert-link">Click here</a>
+        </div>
+        <h2>alert-heading</h2>
+        <div class="alert alert-danger">
+            <h5>alert-heading</h5>
+            content for alert
+        </div>
+        <h2>dismisable alert</h2>
+        <div class="alert alert-success alert-dismissible">
+            Touch the 'X' button to close
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+    <script src="setup/bootstrap.bundle.min.js"></script>
+</body>
+</html>
